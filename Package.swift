@@ -23,7 +23,7 @@ let package = Package(
         .executable(name: "NIOTSHTTPServer", targets: ["NIOTSHTTPServer"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/brightenai/swift-nio.git", from: "2.19.0"),
+        .package(url: "https://github.com/brightenai/swift-nio.git", .branch("master")),
     ],
     targets: [
         .target(name: "NIOTransportServices",
